@@ -6,6 +6,7 @@ const button = document.querySelector("button");
  const getImage = async function () {
    const res = await fetch("https://picsum.photos/v2/list?limit=100");
    const images = await res.json();
+<<<<<<< HEAD
    selectRandomImage(images);
  };
 
@@ -32,3 +33,9 @@ const displayImage = function (randomImage) {
 button.addEventListener("click", function () {
   getImage();
 });
+=======
+   console.log(images);
+ };
+
+ getImage();
+>>>>>>> 7a295187e0645c4bfcd11a77df879871ca8c2ed9
